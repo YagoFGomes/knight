@@ -131,3 +131,13 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Messages
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+        messages.DEBUG: 'alert alert-secondary alert-dismissible fade show',
+        messages.INFO: 'alert alert-info alert-dismissible fade show',
+        messages.SUCCESS: 'alert alert-success alert-dismissible fade show',
+        messages.WARNING: 'alert alert-warning alert-dismissible fade show',
+        messages.ERROR: 'alert alert-danger alert-dismissible fade show',
+}
